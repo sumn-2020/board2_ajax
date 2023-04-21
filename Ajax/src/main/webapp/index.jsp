@@ -90,13 +90,15 @@
 	<br>
 	<div class="container">
 	
-		<div class="form-group row pull-right">
-			<div class="col-xs-8">
-				<input class="form-control" id="userName" onkeyup="searchFunction()"  type="text" size="20">
-				<!--  onkeyup : 입력할때마다 searchFunction이라는 함수가 실행됨 -->
-			</div>
-			<div class="col-xs-2">
-				<button class="btn btn-primary" onclick="searchFunction();" type="button">검색</button>
+		<div class="form-group ">
+			<div class=" row  pull-right">
+				<div class="col-xs-8">
+					<input class="form-control" id="userName" onkeyup="searchFunction()"  type="text" size="20">
+					<!--  onkeyup : 입력할때마다 searchFunction이라는 함수가 실행됨 -->
+				</div>
+				<div class="col-xs-2">
+					<button class="btn btn-primary" onclick="searchFunction();" type="button">검색</button>
+				</div>
 			</div>
 			<table class="table" style="text-align:center; border: 1px solid #ddd;">
 				<thead>
@@ -124,7 +126,7 @@
 	
 	
 		<!-- 회원등록  -->
-		<div class="container">
+
 			<table class="table" style="text-align:center; border: 1px solid #ddd;">
 				<thead>
 					<tr>
@@ -164,8 +166,7 @@
 					</tr>
 				</tbody>
 			</table>
-		
-		</div>
+
 	
 	
 	
