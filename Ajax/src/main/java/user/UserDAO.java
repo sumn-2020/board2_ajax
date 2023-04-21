@@ -65,6 +65,28 @@ public class UserDAO {
 	
 	
 	
+	/**
+	 * 
+	 * 회원등록
+	 * 
+	 */
+	public int register(User user) {
+		String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?)";
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, user.getUserName());
+			pstmt.setInt(2, user.getUserAge());
+			pstmt.setString(3, user.getUserGender());
+			pstmt.setString(4, user.getUserEmail());
+			return pstmt.executeUpdate(); // 성공적으로 추가될경우 1 반환 
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1; //데이터베이스 오류
+	}
+	
+	
+	
 	
 	
 }
